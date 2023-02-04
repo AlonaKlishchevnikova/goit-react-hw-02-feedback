@@ -1,6 +1,5 @@
 import { Component } from "react";
-// import styles from './feedback.module.scss';
-// const feedbackOptions = ["good"];
+
 class Feedback extends Component {
     state = {
     good: 0,
@@ -58,7 +57,7 @@ class Feedback extends Component {
             <div>
                 <div>
                     <h3>Please leave feedback</h3>
-                    <button onClick = {()=>this.leaveFeedback("good")}>Good</button>
+                    <button onClick = {() => this.leaveFeedback("good")}>Good</button>
                     <button onClick={() => this.leaveFeedback("neutral")}>Neutral</button>
                     <button onClick={() => this.leaveFeedback("bad")}>Bad</button>
                 </div>
